@@ -1,332 +1,89 @@
-Contribution: 2025-05-16 15:00
+# Beego [![Test](https://github.com/beego/beego/actions/workflows/test.yml/badge.svg?branch=develop)](https://github.com/beego/beego/actions/workflows/test.yml) [![Go Report Card](https://goreportcard.com/badge/github.com/beego/beego)](https://goreportcard.com/report/github.com/beego/beego) [![Go Reference](https://pkg.go.dev/badge/github.com/beego/beego/v2.svg)](https://pkg.go.dev/github.com/beego/beego/v2)
 
-Contribution: 2025-05-16 15:01
+Beego is used for rapid development of enterprise application in Go, including RESTful APIs, web apps and backend services.
 
-Contribution: 2025-05-16 15:02
+It is inspired by Tornado, Sinatra and Flask. beego has some Go-specific features such as interfaces and struct embedding.
 
-Contribution: 2025-05-17 15:00
+## Quick Start
+- [New Doc Website - unavailable](https://beego.gocn.vip)
+- [New Doc Website Backup @flycash](https://doc.meoying.com/en-US/beego/developing/)
+- [New Doc Website source code](https://github.com/beego/beego-doc)
+- [Old Doc - github](https://github.com/beego/beedoc)
+- [Example](https://github.com/beego/beego-example)
 
-Contribution: 2025-05-17 15:01
+> Kindly remind that sometimes the HTTPS certificate is expired, you may get some NOT SECURE warning
 
-Contribution: 2025-05-17 15:02
+### Web Application
 
-Contribution: 2025-05-17 15:03
+#### Create `hello` directory, cd `hello` directory
 
-Contribution: 2025-05-17 15:04
+    mkdir hello
+    cd hello
 
-Contribution: 2025-05-18 15:00
+#### Init module
 
-Contribution: 2025-05-21 15:00
+    go mod init
 
-Contribution: 2025-05-21 15:01
+#### Download and install
 
-Contribution: 2025-05-21 15:02
+    go get github.com/beego/beego/v2@latest
 
-Contribution: 2025-05-21 15:03
+#### Create file `hello.go`
 
-Contribution: 2025-05-25 15:00
+```go
+package main
 
-Contribution: 2025-05-25 15:01
+import "github.com/beego/beego/v2/server/web"
 
-Contribution: 2025-05-25 15:02
+func main() {
+	web.Run()
+}
+```
 
-Contribution: 2025-05-25 15:03
+#### Download required dependencies
 
-Contribution: 2025-05-26 15:00
+    go mod tidy
 
-Contribution: 2025-05-26 15:01
+#### Build and run
 
-Contribution: 2025-05-26 15:02
+    go build hello.go
+    ./hello
 
-Contribution: 2025-05-30 15:00
+#### Go to [http://localhost:8080](http://localhost:8080)
 
-Contribution: 2025-05-30 15:01
+Congratulations! You've just built your first **beego** app.
 
-Contribution: 2025-05-30 15:02
+## Features
 
-Contribution: 2025-05-30 15:03
+* RESTful support
+* [MVC architecture](https://github.com/beego/beedoc/tree/master/en-US/mvc)
+* Modularity
+* [Auto API documents](https://github.com/beego/beedoc/blob/master/en-US/advantage/docs.md)
+* [Annotation router](https://github.com/beego/beedoc/blob/master/en-US/mvc/controller/router.md)
+* [Namespace](https://github.com/beego/beedoc/blob/master/en-US/mvc/controller/router.md#namespace)
+* [Powerful development tools](https://github.com/beego/bee)
+* Full stack for Web & API
 
-Contribution: 2025-05-30 15:04
+## Modules
 
-Contribution: 2025-05-31 15:00
+* [orm](https://github.com/beego/beedoc/tree/master/en-US/mvc/model)
+* [session](https://github.com/beego/beedoc/blob/master/en-US/module/session.md)
+* [logs](https://github.com/beego/beedoc/blob/master/en-US/module/logs.md)
+* [config](https://github.com/beego/beedoc/blob/master/en-US/module/config.md)
+* [cache](https://github.com/beego/beedoc/blob/master/en-US/module/cache.md)
+* [context](https://github.com/beego/beedoc/blob/master/en-US/module/context.md)
+* [admin](https://github.com/beego/beedoc/blob/master/en-US/module/admin.md)
+* [httplib](https://github.com/beego/beedoc/blob/master/en-US/module/httplib.md)
+* [task](https://github.com/beego/beedoc/blob/master/en-US/module/task.md)
+* [i18n](https://github.com/beego/beedoc/blob/master/en-US/module/i18n.md)
 
-Contribution: 2025-05-31 15:01
+## Community
 
-Contribution: 2025-05-31 15:02
+* Welcome to join us in Slack: [https://beego.slack.com invite](https://join.slack.com/t/beego/shared_invite/zt-fqlfjaxs-_CRmiITCSbEqQG9NeBqXKA),
+* QQ Group ID:523992905
+* [Contribution Guide](https://github.com/beego/beedoc/blob/master/en-US/intro/contributing.md).
 
-Contribution: 2025-05-31 15:03
+## License
 
-Contribution: 2025-06-02 15:00
-
-Contribution: 2025-06-02 15:01
-
-Contribution: 2025-06-02 15:02
-
-Contribution: 2025-06-02 15:03
-
-Contribution: 2025-06-03 15:00
-
-Contribution: 2025-06-03 15:01
-
-Contribution: 2025-06-03 15:02
-
-Contribution: 2025-06-04 15:00
-
-Contribution: 2025-06-04 15:01
-
-Contribution: 2025-06-04 15:02
-
-Contribution: 2025-06-04 15:03
-
-Contribution: 2025-06-04 15:04
-
-Contribution: 2025-06-06 15:00
-
-Contribution: 2025-06-08 15:00
-
-Contribution: 2025-06-08 15:01
-
-Contribution: 2025-06-08 15:02
-
-Contribution: 2025-06-09 15:00
-
-Contribution: 2025-06-11 15:00
-
-Contribution: 2025-06-11 15:01
-
-Contribution: 2025-06-11 15:02
-
-Contribution: 2025-06-11 15:03
-
-Contribution: 2025-06-12 15:00
-
-Contribution: 2025-06-13 15:00
-
-Contribution: 2025-06-14 15:00
-
-Contribution: 2025-06-14 15:01
-
-Contribution: 2025-06-15 15:00
-
-Contribution: 2025-06-18 15:00
-
-Contribution: 2025-06-18 15:01
-
-Contribution: 2025-06-18 15:02
-
-Contribution: 2025-06-23 15:00
-
-Contribution: 2025-06-23 15:01
-
-Contribution: 2025-06-25 15:00
-
-Contribution: 2025-06-25 15:01
-
-Contribution: 2025-06-25 15:02
-
-Contribution: 2025-06-25 15:03
-
-Contribution: 2025-06-25 15:04
-
-Contribution: 2025-06-26 15:00
-
-Contribution: 2025-06-26 15:01
-
-Contribution: 2025-06-26 15:02
-
-Contribution: 2025-06-26 15:03
-
-Contribution: 2025-06-27 15:00
-
-Contribution: 2025-06-27 15:01
-
-Contribution: 2025-06-27 15:02
-
-Contribution: 2025-06-27 15:03
-
-Contribution: 2025-06-27 15:04
-
-Contribution: 2025-06-30 15:00
-
-Contribution: 2025-06-30 15:01
-
-Contribution: 2025-06-30 15:02
-
-Contribution: 2025-07-01 15:00
-
-Contribution: 2025-07-01 15:01
-
-Contribution: 2025-07-01 15:02
-
-Contribution: 2025-07-01 15:03
-
-Contribution: 2025-07-03 15:00
-
-Contribution: 2025-07-03 15:01
-
-Contribution: 2025-07-04 15:00
-
-Contribution: 2025-07-04 15:01
-
-Contribution: 2025-07-04 15:02
-
-Contribution: 2025-07-04 15:03
-
-Contribution: 2025-07-04 15:04
-
-Contribution: 2025-07-05 15:00
-
-Contribution: 2025-07-05 15:01
-
-Contribution: 2025-07-05 15:02
-
-Contribution: 2025-07-06 15:00
-
-Contribution: 2025-07-06 15:01
-
-Contribution: 2025-07-06 15:02
-
-Contribution: 2025-07-07 15:00
-
-Contribution: 2025-07-07 15:01
-
-Contribution: 2025-07-08 15:00
-
-Contribution: 2025-07-08 15:01
-
-Contribution: 2025-07-08 15:02
-
-Contribution: 2025-07-08 15:03
-
-Contribution: 2025-07-08 15:04
-
-Contribution: 2025-07-09 15:00
-
-Contribution: 2025-07-09 15:01
-
-Contribution: 2025-07-09 15:02
-
-Contribution: 2025-07-09 15:03
-
-Contribution: 2025-07-09 15:04
-
-Contribution: 2025-07-10 15:00
-
-Contribution: 2025-07-12 15:00
-
-Contribution: 2025-07-13 15:00
-
-Contribution: 2025-07-14 15:00
-
-Contribution: 2025-07-14 15:01
-
-Contribution: 2025-07-14 15:02
-
-Contribution: 2025-07-14 15:03
-
-Contribution: 2025-07-16 15:00
-
-Contribution: 2025-07-16 15:01
-
-Contribution: 2025-07-16 15:02
-
-Contribution: 2025-07-17 15:00
-
-Contribution: 2025-07-17 15:01
-
-Contribution: 2025-07-18 15:00
-
-Contribution: 2025-07-18 15:01
-
-Contribution: 2025-07-19 15:00
-
-Contribution: 2025-07-19 15:01
-
-Contribution: 2025-07-20 15:00
-
-Contribution: 2025-07-20 15:01
-
-Contribution: 2025-07-20 15:02
-
-Contribution: 2025-07-21 15:00
-
-Contribution: 2025-07-21 15:01
-
-Contribution: 2025-07-21 15:02
-
-Contribution: 2025-07-21 15:03
-
-Contribution: 2025-07-22 15:00
-
-Contribution: 2025-07-23 15:00
-
-Contribution: 2025-07-23 15:01
-
-Contribution: 2025-07-23 15:02
-
-Contribution: 2025-07-23 15:03
-
-Contribution: 2025-07-23 15:04
-
-Contribution: 2025-07-26 15:00
-
-Contribution: 2025-07-26 15:01
-
-Contribution: 2025-07-26 15:02
-
-Contribution: 2025-07-26 15:03
-
-Contribution: 2025-07-26 15:04
-
-Contribution: 2025-07-27 15:00
-
-Contribution: 2025-07-27 15:01
-
-Contribution: 2025-07-27 15:02
-
-Contribution: 2025-07-28 15:00
-
-Contribution: 2025-07-28 15:01
-
-Contribution: 2025-07-28 15:02
-
-Contribution: 2025-07-28 15:03
-
-Contribution: 2025-07-28 15:04
-
-Contribution: 2025-07-29 15:00
-
-Contribution: 2025-07-29 15:01
-
-Contribution: 2025-07-29 15:02
-
-Contribution: 2025-07-29 15:03
-
-Contribution: 2025-07-29 15:04
-
-Contribution: 2025-07-30 15:00
-
-Contribution: 2025-07-30 15:01
-
-Contribution: 2025-07-30 15:02
-
-Contribution: 2025-07-30 15:03
-
-Contribution: 2025-08-02 15:00
-
-Contribution: 2025-08-02 15:01
-
-Contribution: 2025-08-02 15:02
-
-Contribution: 2025-08-02 15:03
-
-Contribution: 2025-08-02 15:04
-
-Contribution: 2025-08-03 15:00
-
-Contribution: 2025-08-03 15:01
-
-Contribution: 2025-08-03 15:02
-
-Contribution: 2025-08-03 15:03
-
+beego source code is licensed under the Apache Licence, Version 2.0
+([https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)).
