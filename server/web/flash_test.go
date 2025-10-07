@@ -29,6 +29,7 @@ func (t *TestFlashController) TestWriteFlash() {
 	flash := NewFlash()
 	flash.Notice("TestFlashString")
 	flash.Store(&t.Controller)
+	// we choose to serve json because we don't want to load a template html file
 	t.ServeJSON(true)
 }
 
